@@ -1,0 +1,53 @@
+<html>
+	<head>
+	    <title> jQuery First Project</title>
+		
+		<style type="text/css">
+			.square
+			{
+			
+				 height:200px;
+				 width:200px;
+				 position:relative;
+			}
+			#red_square
+			{
+				 background-color:red;
+				 float:left;
+				 margin:10px;
+			}
+			#blue_square
+			{
+				 background-color:blue;
+				 float:left;
+				 margin:10px;
+			}
+			#green_circle
+			{
+			     background-color:green;
+				 border-radius:50%;
+				 float:left;
+				 margin:10px;
+			}
+			
+		</style>
+		
+		<script type="text/javascript" src="jquery.min.js"> </script>
+	    
+	    
+	</head>
+	<body>
+	    <div class="square" id="red_square"></div>
+		<div class="square" id="blue_square"></div>
+		<div class="square" id="green_circle"></div>
+		<iframe src="https://www.ecowebhosting.co.uk"></iframe>
+		<p id="change"> This is my yard... </p>
+		<script type="text/javascript">
+		
+		   $("#blue_square").hover(function(){
+		    $("iframe").attr("src", "https://www.google.co.in");
+		   });
+		   
+		</script>
+	</body>
+</html>

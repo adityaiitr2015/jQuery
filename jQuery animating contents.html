@@ -1,0 +1,46 @@
+<html>
+	<head>
+	    <title> jQuery First Project</title>
+		
+		<style type="text/css">
+			 
+			#green_circle
+			{
+			     height:100px;
+				 width: 100px;
+			     background-color:green;
+				 border-radius:50%; 
+				 margin:10px;  
+			}
+			 
+		</style>
+		
+		<script type="text/javascript" src="jquery.min.js"> </script>
+	    
+	</head>
+	
+	<body>
+	     
+		<div id="green_circle"></div> 
+		 
+		<button id="click"> Click me to see the magic</button>
+		 
+		<script type="text/javascript">
+		
+		   $("#click").click(function()
+		   {
+		     $("#click").fadeOut();
+		     $("#green_circle").animate(
+			    {width:"300px", 
+				height:"300px",
+				marginLeft:"200px", 
+				marginTop:"200px"}
+				, 2000, function()
+				{
+				   $(this).css("background-color", "red");
+				});
+		   });
+		   
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+	    <title> jQuery First Project</title>
+		
+		<style type="text/css">
+			 
+			#green_circle
+			{
+			     height:200px;
+				 width: 50px;
+			     background-color:green;
+				 border-radius:50%;
+				 float:left;
+				 margin:10px;
+			}
+			
+		</style>
+		
+		<script type="text/javascript" src="jquery.min.js"> </script>
+	    
+	    
+	</head>
+	<body>
+	     
+		<div id="green_circle"></div>
+		 
+		<script type="text/javascript">
+		
+		   $("#green_circle").click(function()
+		   {
+		     $("#green_circle").css("background-color", "blue");
+		   });
+		   
+		</script>
+	</body>
+</html>
